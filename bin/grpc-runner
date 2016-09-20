@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "grpc/runner"
+
+ARGV.each do |service_name|
+  require service_name
+end
+
+GRPC::Runner.run
