@@ -1,5 +1,6 @@
 require "grpc/runner/version"
 require "grpc"
+require "set"
 
 module GRPC::Runner
   @services = Set.new
